@@ -9,12 +9,16 @@ document.write("<br>")
 document.write("2" + 1);
 
 function myFunction() {
-    document.getElementById("Test").innerHTML = 0/0;
+    document.getElementById("Test").innerHTML = 0/0; // this would be NaN because zero cant be divided by zero
 }
 
-//document.getElementById("Test2").innerHTML = isNaN('This is a string');
+function my2ndFunction() {
+document.getElementById("Test2").innerHTML = isNaN('This is a string'); // this is true because it is a string
+}
 
-//document.getElementById("Test3").innerHTML = isNaN('007');
+function my3rdFunction() {
+document.getElementById("Test3").innerHTML = isNaN('007'); // this is false because 007 is a number and not a string
+}
 
 document.write("<br>")
 
@@ -51,6 +55,7 @@ document.write("<br>")
 document.write(5 > 10 || 10 > 4); // "||" is a "OR" operator, if one statement is true it will return true, if both are false it will return false
 
 function notFunction() {
-    document.getElementById("Not").innerHTML = !(20 > 10); // "!" is a "NOT" statement - it checks if the statement is true or false - 
-    //so if the statement is "ACTUALLY" true or false it will return true, if the statement isnt "ACTUALLY" true or false, then it will return false because it lied
+    document.getElementById("Not").innerHTML = !(20 > 10); // "!" is a "NOT" statement - it checks if the statement is true or false -
+    // to understand this properly you would have to read this statement as "20 is 'not'(!) greater than 10"
+    // the result would be false becausue 20 IS greater than 10
 }
