@@ -38,7 +38,7 @@ document.write(10 < 2); // this is a false statement because 10 is not less than
 
 document.write("<br>")
 
-document.write(10 == 10); // this is an equal tp statement - 10 is equal to 10 so the result is true
+document.write(10 == 10); // this is an equal to statement - 10 is equal to 10 so the result is true
 
 document.write("<br>")
 
